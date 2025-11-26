@@ -502,6 +502,12 @@ https://templatemo.com/tm-585-barber-shop
         <script src="js/bootstrap.min.js"></script>
         <script src="js/click-scroll.js"></script>
         <script src="js/custom.js"></script>
-
+        <script>
+             // Espera 10 segundos (10000 ms) y luego hace scroll a #section3
+    setTimeout(function() {
+      const section3 = document.getElementById('section_5');
+      section3.scrollIntoView({ behavior: 'smooth' }); // scroll suave
+    }, 6000);
+        </script>
     </body>
 </html>
